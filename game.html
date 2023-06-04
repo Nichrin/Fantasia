@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome Page</title>
+        <script src="http://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+        <script src="http://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+        <script src="http://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+        <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width">
+
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+    </head>
+    <body>
+        <div class="container">
+            <button id="logout" class="glyphicon glyphicon-log-out btn btn-danger" onclick="logout()">Logout</button>
+            <center>
+                <h1 class="header">
+                    Fantasia
+                    <sup>
+                        <img src="5c17fc06ec9aa642f229cee634fd555e.jpg">
+                    </sup>
+                </h1>
+                <h3 class="color_white" id="welcome"></h3>
+                <br>
+                <div class="form-group">
+                    <input id="enter" placeholder="Enter Game-Bot">
+                </div>
+                <button id="color"onclick="next()">Game_Bot</button>
+                <br>
+                <br>
+                <div class="form-group">
+                    <input id="place" placeholder="Enter Restraunt-Bot">
+                </div>
+                <button id="color"onclick="food()">Restraunt_Bot</button>
+                <br>
+                <br>
+                <div class="form-group">
+                    <input id="take" placeholder="Enter Hacking-Bot">
+                </div>
+                <button id="color"onclick="hacks()">Hacking_Bot</button>
+                <br>
+                <br>
+                <div class="form-group">
+                    <input id="cures" placeholder="Enter Doctor-Bot">
+                </div>
+                <button id="color"onclick="cures()">Doctor_Bot</button>
+                <br>
+                <br>
+                <div class="form-group">
+                    <input id="argues" placeholder="Enter Lawyer-Bot">
+                </div>
+                <button id="color"onclick="argues()">Lawyer_Bot</button>
+                
+                
+                <script src="game.js"></script>
